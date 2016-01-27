@@ -98,7 +98,7 @@ If you need help with that step, just try Googling ["How to get an Instagram cli
 - `resolution` - Size of the images to get. Available options are:
     - `thumbnail` (default) - 150x150
     - `low_resolution` - 306x306
-    - `standard_resolution` - 612x612
+    - `standard_resolution` - 1080x1080 (updated)
 
 ## Advanced Options
 
