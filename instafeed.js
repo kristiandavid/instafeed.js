@@ -140,6 +140,15 @@
           for (i = 0, len = images.length; i < len; i++) {
             image = images[i];
             imageObj = image.images[this.options.resolution];
+            
+            if(this.options.resolution == 'standard_resolution'){
+              // imageFull = imageObj.url.replace("s640x640","s1080x1080");
+              imageFull = imageObj.url.replace("/s640x640/sh0.08/","/");
+              imageUrl = imageFull;
+            } else{
+              imageUrl = imageObj.url;  
+            }
+
             if (typeof imageObj !== 'object') {
               eMsg = "No image found for resolution: " + this.options.resolution + ".";
               throw new Error(eMsg);
